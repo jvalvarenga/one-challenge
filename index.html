@@ -37,35 +37,44 @@
   </head>
   <body>
     <main>
-      <header>
-        <div class="logo-container">
-          <img src="images/alura-logo.png" alt="Alura logo" />
-        </div>
-      </header>
-      <div class="decoder-wrap">
+      <div class="decoder-content-wrap">
+        <header>
+          <div class="logo-container">
+            <img src="images/alura-logo.png" alt="Alura logo" />
+          </div>
+        </header>
         <div class="decoder-content">
-          <h1>Digite seu texto</h1>
-        </div>
-        <div class="decoder-buttons">
-          <p>Apenas letras minúsculas e sem acento.</p>
-          <div class="button-wrap">
-            <button class="button primary">Criptografar</button>
-            <button class="button secondary">Descriptografar</button>
+          <textarea
+            type="text"
+            name="text"
+            id="text"
+            rows="16"
+            placeholder="Digite seu texto"
+            class="decoder-input"
+          ></textarea>
+          <div class="decoder-buttons">
+            <p>
+              <span class="material-symbols-outlined"> info </span>
+              Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="button-wrap">
+              <button class="button btn-primary">Criptografar</button>
+              <button class="button btn-secondary">Descriptografar</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="decoder-result">
-        <div class="illustartion-conteiner">
-          <img src="images/illustration.svg" alt="Ilustração" />
-        </div>
-        <div class="start-text">
-          <h2>
-            <span class="material-symbols-outlined"> info </span>
-            Nenhuma mensagem encontrada
-          </h2>
-          <p>
-            Digite um texto que você deseja criptografar ou descriptografar.
-          </p>
+        <div class="decoder-results-wrap">
+          <div class="illustration-conteiner">
+            <img src="images/illustration.svg" alt="Ilustração" />
+          </div>
+          <div class="start-text">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
         </div>
       </div>
     </main>
