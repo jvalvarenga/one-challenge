@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  direction: ltr;
+  text-align: left;
+  min-height: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
