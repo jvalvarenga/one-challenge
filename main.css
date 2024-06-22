@@ -93,22 +93,25 @@ main {
   margin-top: 2rem;
 }
 
-.decoder-input {
-  width: 70%;
+.text-area {
   resize: none;
   padding: 0.5rem;
   border: none;
   outline: none;
   font-family: "Roboto";
   font-size: 1rem;
-  background-color: var(--page-bg-color);
   color: var(--primary-color);
 }
 
-.decoder-input::placeholder {
+.text-area::placeholder {
   font-size: 1.4rem;
   color: var(--primary-color);
   line-height: 0.9;
+}
+
+.decoder-text-area {
+  width: 70%;
+  background-color: var(--page-bg-color);
 }
 
 .decoder-buttons {
@@ -164,6 +167,32 @@ main {
   flex-direction: column;
   background-color: var(--bg-color);
   border-radius: 2rem;
+}
+
+#decoder-initial-result {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result-text-area {
+  height: 90%;
+  width: 80%;
+  display: none;
+  padding-top: 1.5rem;
+}
+
+.result-text-area::placeholder {
+  font-size: 1.1rem !important;
+  line-height: 1.1 !important;
+}
+
+#copiar {
+  display: none;
+  margin-bottom: 1.5rem;
 }
 
 .illustration-conteiner {

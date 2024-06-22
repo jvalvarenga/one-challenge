@@ -9,7 +9,7 @@
       name="description"
       content="Resolução do Challenge Decodificador de Texto One Oracle"
     />
-    <title>Challenge One</title>
+    <title>Challenge One | João Alvarenga</title>
 
     <!-- Import Google Fonts and Icons Start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,11 +46,11 @@
         <div class="decoder-content">
           <textarea
             type="text"
-            name="text"
-            id="text"
+            name="texto"
+            id="texto"
             rows="16"
             placeholder="Digite seu texto"
-            class="decoder-input"
+            class="text-area decoder-text-area"
           ></textarea>
           <div class="decoder-buttons">
             <p>
@@ -58,22 +58,39 @@
               Apenas letras minúsculas e sem acento.
             </p>
             <div class="button-wrap">
-              <button class="button btn-primary">Criptografar</button>
-              <button class="button btn-secondary">Descriptografar</button>
+              <button id="criptografar" class="button btn-primary">
+                Criptografar
+              </button>
+              <button id="descriptografar" class="button btn-secondary">
+                Descriptografar
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div class="decoder-result">
         <div class="decoder-results-wrap">
-          <div class="illustration-conteiner">
-            <img src="images/illustration.svg" alt="Ilustração" />
+          <textarea
+            id="resultado"
+            class="text-area result-text-area"
+            id="texto"
+            rows="16"
+            readonly
+            placeholder="Nenhuma mensagem encontrada"
+          ></textarea>
+          <div>
+            <button id="copiar" class="button btn-secondary">Copiar</button>
           </div>
-          <div class="start-text">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>
-              Digite um texto que você deseja criptografar ou descriptografar.
-            </p>
+          <div id="decoder-initial-result">
+            <div class="illustration-conteiner">
+              <img src="images/illustration.svg" alt="Ilustração" />
+            </div>
+            <div class="start-text">
+              <h2>Nenhuma mensagem encontrada</h2>
+              <p>
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
           </div>
         </div>
       </div>
